@@ -1,0 +1,495 @@
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.column {width:750px}
+.section-margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.logo {
+    margin-left: 0;
+    float: none;
+    text-align: center;
+}
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.main-menu {
+    margin-left: 0;
+    float: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-menu ul li a {
+    font-size: 15px;
+    padding: 6px 16px;
+}
+.header-search {
+    margin-right: 0;
+    float: none;
+    margin: 0 auto;
+    width: 25%; 
+}
+.header-search form input {
+    width: 100%;
+}
+.slider-area {
+    background-image:none;
+    min-height: auto;
+    padding-bottom: 50px;
+}
+.single-slider {
+    margin-top: 50px;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.single-slider h1 {
+    margin-bottom: 16px;
+    font-size: 50px;
+}
+.single-slider h2 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.slider-link {
+    margin-top: 30px;
+}
+.slider-link a {
+    font-size: 15px;
+    padding: 12px 25px;
+    margin-right: 21px;
+}
+.slider-contents .owl-dots {
+    text-align: center;
+    margin-top: 0px;
+}
+.single-service-number h2 {
+    font-size: 70px;
+    width: 90px;
+    height: 90px;
+}
+.single-service-number {
+    top: -50px;
+    left: 75px;
+}
+.single-service-content h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.single-service-content p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.who-we-are-left {
+    width: 100%;
+    float: none;
+}
+.who-we-area-right {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 50px;
+   padding-bottom: 50px;
+}
+.who-we-are-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.who-we-are-title h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.who-we-are-title p {
+    line-height: 22px;
+    font-size: 15px;
+}
+.who-we-are-lists {
+    margin-top: 40px;
+}
+.section-title {
+    width: 80%;
+    padding-left: 30px;
+}
+.section-title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.section-title h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.what-we-offer-area {
+    background-image: none;
+}
+.why-choose-us-left {
+    margin-left: 0;
+    width: 94%;
+    margin-top: 50px;
+    float: none;
+}
+.fprogress-bar {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+.why-choose-us-right {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    float: none;
+    padding: 5px;
+}
+.single-why-choose-us img {
+    max-width: 360px;
+    height: auto;
+}
+.our-team-name h2 {
+    font-size: 16px;
+    margin-bottom: 10px
+}
+.our-team-name h3 {
+    font-size: 14px;
+}
+.our-team-hover a i {
+    font-size: 24px;
+    margin-top: 75px;
+}
+.project-count-area {
+    min-height: 380px;
+}
+.single-project-counting h2.counter {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.project-name h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.single-project-counting {
+    width: 27%;
+    padding: 50px 26px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-right: 55px;
+    margin-left: 6px;
+}
+.project-icon i {
+    font-size: 40px;
+}
+.single-testimonial-area .owl-nav {
+    display: none;
+}
+.newsletter-form form input[type="submit"] {
+    right: 50px;
+}
+.footers {
+    margin-top: 50px;
+}
+.single-widget {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+.section-margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.section-title {
+    width: 100%;
+        padding-left: 5px;
+    padding-right: 5px; text-align:center;
+}
+.section-title h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+   
+}
+.section-title h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.column {width:300px}
+.logo {
+    margin-left: 0;
+    float: none;
+    text-align: center;
+}
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.main-menu {
+    display: none;
+}
+.slicknav_menu{display: block;}
+.header-search {
+    float: none;
+    margin: 0 auto;
+    width: 45%;
+}
+.header-search {
+    float: none;
+    margin: 0 auto;
+    width: 45%;
+}
+.slider-area {
+    min-height: 360px;
+}
+.single-slider {
+    margin-top: 50px;
+    text-align: center;
+        margin-bottom: 20px;
+}
+.single-slider h1 {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+.single-slider h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.single-slider p {
+    font-size: 15px;
+}
+.slider-link {
+    margin-top: 30px;
+}
+.slider-link a {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.slider-contents .owl-dots {
+    text-align: center;
+    margin-top: 0;
+}
+.single-service-number h2 {
+    font-size: 70px;
+    width: 95px;
+    height: 95px;
+}
+.single-service {
+    width: 100%;
+    float: none;
+}
+.single-service-number {
+    top: -50px;
+}
+.single-service-content h2 {
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+.who-we-are-left {
+    width: 100%;
+    float: none;
+}
+.who-we-area-right {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 40px;
+    text-align: center;
+    padding: 5px;
+}
+.who-we-are-title h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.who-we-are-title h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.who-we-are-title p {
+    line-height: 24px;
+    font-size: 14px;
+}
+.who-we-are-lists ul li {
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    padding-left: 23px;
+    background-position: 0 8px;
+    text-align: left;
+}
+.what-we-offer-slider {
+    margin-top: 30px;
+}
+.single-what-slider-icon {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #d9d9d9;
+    border-radius: 500px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.single-what-slider-title a h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.single-what-we-slider {
+    padding: 25px;
+}
+.single-what-slider-content p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.what-we-offer .owl-dots {
+    margin-top: 20px;
+}
+.why-choose-us-left {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 50px;
+    float: none;
+}
+.fprogress-bar {
+    margin-top: 30px;
+    padding-left: 5px;
+    padding-right: 22px;
+}
+.why-choose-us-right {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    float: none;
+    padding: 5px;
+    margin-top: 30px;
+}
+.single-why-choose-us {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.single-why-choose-us img {
+    max-width: 100%;
+    height: auto;
+}
+.single-why-choose-us:nth-last-child(-n+2) {
+    margin-bottom: 10px;
+}
+.single-our-team {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.project-counting {
+    padding: 10px;
+}
+.single-project-counting {
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 40px 30px;
+}
+.single-project-counting h2.counter {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.project-name h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.project-icon i {
+    font-size: 35px;
+    color: #fff;
+}
+.project-count-area {
+    min-height: 860px;
+}
+
+.single-testimonial-area .owl-stage-outer {
+    padding-bottom: 0;
+}
+.single-testimonial {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.single-testimonial-area .owl-item.active.center .clients-reviews {
+    position: static;
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin-top: 15px;
+}
+.single-testimonial-area .owl-item.active.center .clients-information {
+    position: static;
+    top: 0;
+    margin-top: 20px;
+}
+
+.newsletters {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.newsletter-title h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.newsletter-form form input[type="email"] {
+    font-size: 14px;
+}
+.newsletter-form form input {
+    width: 97%;
+    padding: 15px 20px;
+}
+.newsletter-form form input[type="submit"] {
+    width: 103px;
+    padding: 13px 16px;
+    top: 3px;
+    right: 9px;
+}
+.footers {
+    margin-top: 50px;
+}
+.single-widget {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 10px;
+        margin-bottom: 30px;
+}
+
+
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.column {width:450px}
+.header-search form input {
+    width: 220px;
+}
+.single-service {
+    text-align: center;
+}
+.single-service-number {
+    left: 165px;
+    right: 0;
+}
+
+.who-we-are-lists ul li {
+    width: 49%;
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 21px;
+    background-position: 0 6px;
+}
+.single-gallery:nth-child(3n) {
+    margin-right: 16px;
+}
+
+}
+
+

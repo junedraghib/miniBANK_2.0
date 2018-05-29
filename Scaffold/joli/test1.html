@@ -1,0 +1,72 @@
+<div class="page-content-wrap">
+
+                    <div class="row">
+                        <div class="col-md-9 sem" style="padding-top : 35px; padding-left : 20px;" id="detail">
+                            <div class="col sem" id="message">
+                                <div class="col" style="height: 100%; max-height: 500px; overflow-y: scroll;">
+                                    <div class="content-frame-top">
+                                        <div class="page-title">
+                                            <h2>
+                                                <span class="fa fa-comments"></span> Messages</h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-frame-body content-frame-body-left">
+
+                                        <div class="messages messages-img">
+                                            <?php
+                                            while ($messageallrow=mysqli_fetch_array($messageallresult))
+                                            {
+                                        ?>
+                                                <div class="item in">
+                                                    <div class="image">
+                                                        <img src="favicon.ico" alt="John Doe">
+                                                    </div>
+                                                    <div class="text">
+                                                        <div class="heading">
+                                                            <a href="#">
+                                                                <?php echo $messageallrow['time_of_notification']." ".$messageallrow['date_of_notification'];?>
+                                                            </a>
+                                                            <span class="date">
+                                                                <?php echo " Account No. ".$messageallrow['account_no'];?>
+                                                            </span>
+                                                        </div>
+                                                        <?php echo $messageallrow['message'];?>
+                                                    </div>
+                                                </div>
+                                                <?php
+                                            }
+                                        ?>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="panel panel-default push-up-10">
+                                    <div class="panel-body panel-body-search">
+                                        <div class="input-group">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default">
+                                                    <span class="fa fa-camera"></span>
+                                                </button>
+                                                <button class="btn btn-default">
+                                                    <span class="fa fa-chain"></span>
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Your message..." />
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- users-->
+                            
+                            <!-- users-->
+
+                        </div>
+                        
+
+
+                    </div>
+                </div>
