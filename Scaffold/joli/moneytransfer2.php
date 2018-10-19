@@ -39,37 +39,6 @@
     }
 
     mysqli_select_db($con,"ajax_demo");
-    if (isset($_GET['submit']))
-    {
-        $sql="SELECT * from usrAcc where account_no='$payee'";
-        $result = mysqli_query($con,$sql);
-        echo "<div id='payer_acc' style='display : none;'>".$payer."</div>";
-        echo "<div id='payee_acc' style='display : none;'>".$payee."</div>";
-        echo "<div id='amt' style='display : none;'>".$amt."</div>";
-        echo "<table>";
-        while($row = mysqli_fetch_array($result))
-        {
-        
-        echo "<tr>";
-        echo "<td>Payee Name </td>";
-        echo "<td>" . $row['name'] . "</td>";
-        echo "</tr>";
-        echo "<tr>";
-        echo "<td>Payee Account</td>";
-        echo "<td>" . $row['account_no'] . "</td>";
-        echo "</tr>";
-        echo "<tr>";
-        echo "<td>Payee CIN </td>";
-        echo "<td>" . $row['cin'] . "</td>";
-        echo "</tr>";
-        echo "<tr>";
-        echo "<td>Amount</td>";
-        echo "<td>" . $amt . "</td>";
-        echo "</tr>";
-        }
-        echo "</table>";
-        echo "<input type='submit' name='pay' id='pay' value='Pay Now' onclick='payNow()'>";
-    }
     if (isset($_GET['submit12']))
     {
         $sql="SELECT * from usrAcc where account_no=(select getAcc($payee))";

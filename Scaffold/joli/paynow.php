@@ -46,6 +46,27 @@ if (isset($_GET['pay']))
     $mysqli->close();
 }
 
+if (isset($_GET['pay12']))
+{  
+    echo "<script>alert('i m in paynow!!')</script>";
+    $mysqli = new mysqli("localhost", "root", "raghib@1998", "juned");
+    if ($mysqli->connect_errno)
+    {
+        echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    }
+
+    if (!$mysqli->query("call transfermoney(getAcc($payer1),getAcc($payee1),$amt1)"))
+    {
+        echo "CALL failed: (" . $mysqli->errno . ") " . $mysqli->error;
+    }
+    else
+    {
+        echo "<h3>Congratulation!!</h3>";  
+        echo "<h4>Your Transaction has been completed successfully.</h4>";    
+    }
+    $mysqli->close();
+}
+
 ?>
 </body>
 </html>

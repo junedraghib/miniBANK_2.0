@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META SECTION -->
+    <title>Joli Admin - Responsive Bootstrap Admin Template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- END META SECTION -->
+
+    <!-- CSS INCLUDE -->
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css" />
+    <!-- EOF CSS INCLUDE -->
+</head>
+
+<body>
+    <!-- START PAGE CONTAINER -->
+    <div class="page-container">
+
+        <!-- START PAGE SIDEBAR -->
+        <div class="page-sidebar" style="background-color : white;">
+            <!-- START X-NAVIGATION -->
+            <ul class="x-navigation">
+                <li class="xn-logo">
+                    <a href="index.html" style="background-color : #1f61db;">
+                        <span class="fa fa-university" style="font-size: 24px; color : white;"></span> miniBANK</a>
+                    <a href="#" class="x-navigation-control"></a>
+                </li>
+                <li class="xn-profile">
+                    <a href="#" class="profile-mini">
+                        <img src="assets/images/users/avatar.jpg" alt="John Doe" />
+                    </a>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="assets/images/users/avatar.jpg" alt="John Doe" />
+                        </div>
+                        <div class="profile-data">
+                            <div class="profile-data-name">John Doe</div>
+                            <div class="profile-data-title">Web Developer/Designer</div>
+                        </div>
+                        <div class="profile-controls">
+                            <a href="pages-profile.html" class="profile-control-left">
+                                <span class="fa fa-info"></span>
+                            </a>
+                            <a href="pages-messages.html" class="profile-control-right">
+                                <span class="fa fa-envelope"></span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="active">
+                    <a href="index.html">
+                        <span class="fa fa-desktop"></span>
+                        <span class="xn-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="xn-openable">
+                    <a href="#">
+                        <span class="fa fa-users"></span>
+                        <span class="xn-text"> Users</span>
+                    </a>
+                    <ul>
+
+                        <li>
+                            <a href="pages-address-book.html">
+                                <span class="fa fa-archive"></span> Saving Deposit</a>
+                        </li>
+                        <li>
+                            <a href="pages-address-book.html">
+                                <span class="fa fa-flash"></span> Fixed Deposit</a>
+                        </li>
+                        <li>
+                            <a href="pages-address-book.html">
+                                <span class="fa fa-credit-card"></span> Current Deposit</a>
+                        </li>
+                        <li>
+                            <a href="pages-address-book.html">
+                                <span class="fa fa-sort-amount-desc"></span> Recurring Deposit</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="xn-openable">
+                    <a href="#">
+                        <span class="fa fa-inr"></span>
+                        <span class="xn-text"> Transactions</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="pages-address-book.html">
+                                <span class="fa fa-money"></span> All Transactions</a>
+                        </li>
+                        <li>
+                            <a href="pages-address-book.html">
+                                <span class="fa fa-download"></span> Deposit</a>
+                        </li>
+                        <li>
+                            <a href="pages-address-book.html">
+                                <span class="fa fa-briefcase"></span> Withdrawal</a>
+                        </li>
+                        <li>
+                            <a href="pages-address-book.html">
+                                <span class="fa fa-share-square-o"></span> Money Transfer</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="xn-openable">
+                    <a href="tables.html">
+                        <span class="fa fa-table"></span>
+                        <span class="xn-text">Tables</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="table-datatables.html">
+                                <span class="fa fa-group"></span> User Table</a>
+                        </li>
+                        <li>
+                            <a href="table-basic.html">
+                                <span class="fa fa-building-o"></span> Account Table</a>
+                        </li>
+
+                        <li>
+                            <a href="table-export.html">
+                                <span class="fa fa-inr"></span> Transaction Tables</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="pages-messages.html">
+                        <span class="fa fa-comments"></span>
+                        <span class="xn-text">Messages</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- END X-NAVIGATION -->
+        </div>
+        <!-- END PAGE SIDEBAR -->
+
+        <!-- PAGE CONTENT -->
+        <div class="page-content">
+
+            <!-- START X-NAVIGATION VERTICAL -->
+            <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                <!-- TOGGLE NAVIGATION -->
+                <li class="xn-icon-button">
+                    <a href="#" class="x-navigation-minimize">
+                        <span class="fa fa-dedent"></span>
+                    </a>
+                </li>
+                <!-- END TOGGLE NAVIGATION -->
+                <!-- SEARCH -->
+                <li class="xn-search">
+                    <form role="form">
+                        <input type="text" name="search" placeholder="Search..." />
+                    </form>
+                </li>
+                <!-- END SEARCH -->
+                <!-- SIGN OUT -->
+                <li class="xn-icon-button pull-right">
+                    <a href="#" class="mb-control" data-box="#mb-signout">
+                        <span class="fa fa-sign-out"></span>
+                    </a>
+                </li>
+                <!-- END SIGN OUT -->
+                <!-- MESSAGES -->
+                <li class="xn-icon-button pull-right">
+                    <a href="#">
+                        <span class="fa fa-comments"></span>
+                    </a>
+                    <div class="informer informer-danger">4</div>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <span class="fa fa-comments"></span> Messages</h3>
+                            <div class="pull-right">
+                                <span class="label label-danger">4 new</span>
+                            </div>
+                        </div>
+                        <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-online"></div>
+                                <img src="assets/images/users/user2.jpg" class="pull-left" alt="John Doe" />
+                                <span class="contacts-title">John Doe</span>
+                                <p>Praesent placerat tellus id augue condimentum</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-away"></div>
+                                <img src="assets/images/users/user.jpg" class="pull-left" alt="Dmitry Ivaniuk" />
+                                <span class="contacts-title">Dmitry Ivaniuk</span>
+                                <p>Donec risus sapien, sagittis et magna quis</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-away"></div>
+                                <img src="assets/images/users/user3.jpg" class="pull-left" alt="Nadia Ali" />
+                                <span class="contacts-title">Nadia Ali</span>
+                                <p>Mauris vel eros ut nunc rhoncus cursus sed</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-offline"></div>
+                                <img src="assets/images/users/user6.jpg" class="pull-left" alt="Darth Vader" />
+                                <span class="contacts-title">Darth Vader</span>
+                                <p>I want my money back!</p>
+                            </a>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="pages-messages.html">Show all messages</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- END MESSAGES -->
+                <!-- TASKS -->
+                <li class="xn-icon-button pull-right">
+                    <a href="#">
+                        <span class="fa fa-tasks"></span>
+                    </a>
+                    <div class="informer informer-warning">3</div>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <span class="fa fa-tasks"></span> Tasks</h3>
+                            <div class="pull-right">
+                                <span class="label label-warning">3 active</span>
+                            </div>
+                        </div>
+                        <div class="panel-body list-group scroll" style="height: 200px;">
+                            <a class="list-group-item" href="#">
+                                <strong>Phasellus augue arcu, elementum</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 50%;">50%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Aenean ac cursus</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 80%;">80%</div>
+                                </div>
+                                <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Lorem ipsum dolor</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 95%;">95%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                <div class="progress progress-small">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 21 Sep 2014 /</small>
+                                <small class="text-success"> Done</small>
+                            </a>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="pages-tasks.html">Show all tasks</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- END TASKS -->
+            </ul>
+            <!-- END X-NAVIGATION VERTICAL -->
+
+            <!-- START BREADCRUMB -->
+
+            <!-- END BREADCRUMB -->
+
+            <!-- PAGE CONTENT WRAPPER -->
+
+
+            <!-- PAGE CONTENT WRAPPER -->
+            <!-- START CONTENT FRAME -->
+            <div class="content-frame">
+
+                <!-- START CONTENT FRAME TOP -->
+                <div class="content-frame-top">
+                    <div class="page-title" style="margin-top:15px;">
+                        <h2 style="color:#1f61db;">
+                            <span class="fa fa-users"></span> Users having Current Deposit Account
+                            <small>139 users</small>
+                        </h2>
+                        <div class="pull-right">
+                            <button class="btn btn-default content-frame-right-toggle">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END CONTENT FRAME TOP -->
+
+                <!-- START CONTENT FRAME LEFT -->
+                <div class="content-frame-right">
+                    <div class="col">
+
+                        <!-- START WIDGET CLOCK -->
+                        <div class="widget widget-info widget-padding-sm" style="margin :3px;">
+                            <div class="widget-big-int plugin-clock">00:00</div>
+                            <div class="widget-subtitle plugin-date">Loading...</div>
+                            <div class="widget-controls">
+                                <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="left" title="Remove Widget">
+                                    <span class="fa fa-times"></span>
+                                </a>
+                            </div>
+                            <div class="widget-buttons widget-c3">
+                                <div class="col">
+                                    <a href="#">
+                                        <span class="fa fa-clock-o"></span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <span class="fa fa-bell"></span>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <span class="fa fa-calendar"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="margin :0px;">
+
+                        <!-- START WIDGET SLIDER -->
+                        <div class="widget widget-default widget-carousel" style="margin :3px;">
+                            <div class="owl-carousel" id="owl-example">
+                                <div>
+                                    <div class="widget-title">Total Visitors</div>
+                                    <div class="widget-subtitle">27/08/2014 15:23</div>
+                                    <div class="widget-int">3,548</div>
+                                </div>
+                                <div>
+                                    <div class="widget-title">Returned</div>
+                                    <div class="widget-subtitle">Visitors</div>
+                                    <div class="widget-int">1,695</div>
+                                </div>
+                                <div>
+                                    <div class="widget-title">New</div>
+                                    <div class="widget-subtitle">Visitors</div>
+                                    <div class="widget-int">1,977</div>
+                                </div>
+                            </div>
+                            <div class="widget-controls">
+                                <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget">
+                                    <span class="fa fa-times"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END WIDGET SLIDER -->
+
+                    </div>
+                    <div class="col">
+
+                        <!-- START WIDGET MESSAGES -->
+                        <div class="widget widget-default widget-item-icon" onclick="location.href='pages-messages.html';" style="margin :3px;">
+                            <div class="widget-item-left">
+                                <span class="fa fa-envelope"></span>
+                            </div>
+                            <div class="widget-data">
+                                <div class="widget-int num-count">48</div>
+                                <div class="widget-title">New messages</div>
+                                <div class="widget-subtitle">In your mailbox</div>
+                            </div>
+                            <div class="widget-controls">
+                                <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget">
+                                    <span class="fa fa-times"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END WIDGET MESSAGES -->
+
+                    </div>
+                    <div class="col">
+
+                        <!-- START WIDGET REGISTRED -->
+                        <div class="widget widget-default widget-item-icon" onclick="location.href='pages-address-book.html';" style="margin :3px;">
+                            <div class="widget-item-left">
+                                <span class="fa fa-user"></span>
+                            </div>
+                            <div class="widget-data">
+                                <div class="widget-int num-count">375</div>
+                                <div class="widget-title">Registred users</div>
+                                <div class="widget-subtitle">On your website</div>
+                            </div>
+                            <div class="widget-controls">
+                                <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget">
+                                    <span class="fa fa-times"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END WIDGET REGISTRED -->
+
+                    </div>
+
+                </div>
+                <!-- END CONTENT FRAME LEFT -->
+
+                <!-- START CONTENT FRAME BODY -->
+                <div class="content-frame-body content-frame-body-left" style="padding-right : 1px;padding-left : 1px;">
+                    <div class="page-content-wrap" style="padding-right : 1px;padding-left : 1px;">
+
+                        <div class="row" style="padding-right : 1px;padding-left : 1px;">
+                            <div class="col-md-3">
+                                <!-- CONTACT ITEM -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body profile">
+                                        <div class="profile-image">
+                                            <img src="assets/images/users/user3.jpg" alt="Nadia Ali" />
+                                        </div>
+                                        <div class="profile-data">
+                                            <div class="profile-data-name">Nadia Ali</div>
+                                            <div class="profile-data-title">Singer-Songwriter</div>
+                                        </div>
+                                        <div class="profile-controls">
+                                            <a href="#" class="profile-control-left">
+                                                <span class="fa fa-info"></span>
+                                            </a>
+                                            <a href="#" class="profile-control-right">
+                                                <span class="fa fa-phone"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="contact-info">
+                                            <p>
+                                                <small>Mobile</small>
+                                                <br/>(555) 555-55-55</p>
+                                            <p>
+                                                <small>Email</small>
+                                                <br/>nadiaali@domain.com</p>
+                                            <p>
+                                                <small>Address</small>
+                                                <br/>123 45 Street San Francisco, CA, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTACT ITEM -->
+                            </div>
+                            <div class="col-md-3">
+                                <!-- CONTACT ITEM -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body profile">
+                                        <div class="profile-image">
+                                            <img src="assets/images/users/user.jpg" alt="Dmitry Ivaniuk" />
+                                        </div>
+                                        <div class="profile-data">
+                                            <div class="profile-data-name">Dmitry Ivaniuk</div>
+                                            <div class="profile-data-title">Web Developer</div>
+                                        </div>
+                                        <div class="profile-controls">
+                                            <a href="#" class="profile-control-left">
+                                                <span class="fa fa-info" style="margin : 5px;"></span>
+                                            </a>
+                                            <a href="#" class="profile-control-right">
+                                                <span class="fa fa-phone"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="contact-info">
+                                            <p>
+                                                <small>Mobile</small>
+                                                <br/>(333) 333-33-22</p>
+                                            <p>
+                                                <small>Email</small>
+                                                <br/>dmitry@domain.com</p>
+                                            <p>
+                                                <small>Address</small>
+                                                <br/>123 45 Street San Francisco, CA, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTACT ITEM -->
+                            </div>
+                            <div class="col-md-3">
+                                <!-- CONTACT ITEM -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body profile">
+                                        <div class="profile-image">
+                                            <img src="assets/images/users/user2.jpg" alt="John Doe" />
+                                        </div>
+                                        <div class="profile-data">
+                                            <div class="profile-data-name">John Doe</div>
+                                            <div class="profile-data-title">Web Developer/Designer</div>
+                                        </div>
+                                        <div class="profile-controls">
+                                            <a href="#" class="profile-control-left">
+                                                <span class="fa fa-info"></span>
+                                            </a>
+                                            <a href="#" class="profile-control-right">
+                                                <span class="fa fa-phone"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="contact-info">
+                                            <p>
+                                                <small>Mobile</small>
+                                                <br/>(234) 567-89-12</p>
+                                            <p>
+                                                <small>Email</small>
+                                                <br/>john@domain.com</p>
+                                            <p>
+                                                <small>Address</small>
+                                                <br/>123 45 Street San Francisco, CA, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTACT ITEM -->
+                            </div>
+                            <div class="col-md-3">
+                                <!-- CONTACT ITEM -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body profile">
+                                        <div class="profile-image">
+                                            <img src="assets/images/users/user4.jpg" alt="Brad Pitt" />
+                                        </div>
+                                        <div class="profile-data">
+                                            <div class="profile-data-name">Brad Pitt</div>
+                                            <div class="profile-data-title">Actor and Film Producer</div>
+                                        </div>
+                                        <div class="profile-controls">
+                                            <a href="#" class="profile-control-left">
+                                                <span class="fa fa-info"></span>
+                                            </a>
+                                            <a href="#" class="profile-control-right">
+                                                <span class="fa fa-phone"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="contact-info">
+                                            <p>
+                                                <small>Mobile</small>
+                                                <br/>(321) 777-55-11</p>
+                                            <p>
+                                                <small>Email</small>
+                                                <br/>brad@domain.com</p>
+                                            <p>
+                                                <small>Address</small>
+                                                <br/>123 45 Street San Francisco, CA, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTACT ITEM -->
+                            </div>
+                            <div class="col-md-3">
+                                <!-- CONTACT ITEM -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body profile">
+                                        <div class="profile-image">
+                                            <img src="assets/images/users/user5.jpg" alt="John Travolta" />
+                                        </div>
+                                        <div class="profile-data">
+                                            <div class="profile-data-name">John Travolta</div>
+                                            <div class="profile-data-title">Actor</div>
+                                        </div>
+                                        <div class="profile-controls">
+                                            <a href="#" class="profile-control-left">
+                                                <span class="fa fa-info"></span>
+                                            </a>
+                                            <a href="#" class="profile-control-right">
+                                                <span class="fa fa-phone"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="contact-info">
+                                            <p>
+                                                <small>Mobile</small>
+                                                <br/>(111) 222-33-78</p>
+                                            <p>
+                                                <small>Email</small>
+                                                <br/>travolta@domain.com</p>
+                                            <p>
+                                                <small>Address</small>
+                                                <br/>123 45 Street San Francisco, CA, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTACT ITEM -->
+                            </div>
+                            <div class="col-md-3">
+                                <!-- CONTACT ITEM -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body profile">
+                                        <div class="profile-image">
+                                            <img src="assets/images/users/user6.jpg" alt="Darth Vader" />
+                                        </div>
+                                        <div class="profile-data">
+                                            <div class="profile-data-name">Darth Vader</div>
+                                            <div class="profile-data-title">Cyborg</div>
+                                        </div>
+                                        <div class="profile-controls">
+                                            <a href="#" class="profile-control-left">
+                                                <span class="fa fa-info"></span>
+                                            </a>
+                                            <a href="#" class="profile-control-right">
+                                                <span class="fa fa-phone"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="contact-info">
+                                            <p>
+                                                <small>Mobile</small>
+                                                <br/>(000) 000-00-01</p>
+                                            <p>
+                                                <small>Email</small>
+                                                <br/>vader@domain.com</p>
+                                            <p>
+                                                <small>Address</small>
+                                                <br/>Somewhere deep in space</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTACT ITEM -->
+                            </div>
+                            <div class="col-md-3">
+                                <!-- CONTACT ITEM -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body profile">
+                                        <div class="profile-image">
+                                            <img src="assets/images/users/user7.jpg" alt="Samuel Leroy Jackson" />
+                                        </div>
+                                        <div class="profile-data">
+                                            <div class="profile-data-name">Samuel Leroy Jackson</div>
+                                            <div class="profile-data-title">Actor and film producer</div>
+                                        </div>
+                                        <div class="profile-controls">
+                                            <a href="#" class="profile-control-left">
+                                                <span class="fa fa-info"></span>
+                                            </a>
+                                            <a href="#" class="profile-control-right">
+                                                <span class="fa fa-phone"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="contact-info">
+                                            <p>
+                                                <small>Mobile</small>
+                                                <br/>(552) 221-23-25</p>
+                                            <p>
+                                                <small>Email</small>
+                                                <br/>samuel@domain.com</p>
+                                            <p>
+                                                <small>Address</small>
+                                                <br/>123 45 Street San Francisco, CA, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTACT ITEM -->
+                            </div>
+                            <div class="col-md-3">
+                                <!-- CONTACT ITEM -->
+                                <div class="panel panel-default">
+                                    <div class="panel-body profile">
+                                        <div class="profile-image">
+                                            <img src="assets/images/users/no-image.jpg" alt="Samuel Leroy Jackson" />
+                                        </div>
+                                        <div class="profile-data">
+                                            <div class="profile-data-name">Alex Sonar</div>
+                                            <div class="profile-data-title">Designer</div>
+                                        </div>
+                                        <div class="profile-controls">
+                                            <a href="pages-profile.html" class="profile-control-left">
+                                                <span class="fa fa-info"></span>
+                                            </a>
+                                            <a href="#" class="profile-control-right">
+                                                <span class="fa fa-phone"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="contact-info">
+                                            <p>
+                                                <small>Mobile</small>
+                                                <br/>(213) 428-74-13</p>
+                                            <p>
+                                                <small>Email</small>
+                                                <br/>alex@domain.com</p>
+                                            <p>
+                                                <small>Address</small>
+                                                <br/>123 45 Street San Francisco, CA, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CONTACT ITEM -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="pagination pagination-sm pull-right push-down-10 push-up-10">
+                                    <li class="disabled">
+                                        <a href="#">«</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">»</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END CONTENT FRAME BODY -->
+            </div>
+            <!-- END CONTENT FRAME -->
+            <!-- END PAGE CONTENT WRAPPER -->
+        </div>
+        <!-- END PAGE CONTENT -->
+    </div>
+    <!-- END PAGE CONTAINER -->
+
+    <!-- MESSAGE BOX-->
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title">
+                    <span class="fa fa-sign-out"></span> Log
+                    <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MESSAGE BOX-->
+
+    <!-- START PRELOADS -->
+    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+    <!-- END PRELOADS -->
+
+    <!-- START SCRIPTS -->
+    <!-- START PLUGINS -->
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- END PLUGINS -->
+
+    <!-- START THIS PAGE PLUGINS-->
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+
+    <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
+    <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>
+    <script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js"></script>
+    <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>
+    <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js'></script>
+    <script type='text/javascript' src='js/plugins/bootstrap/bootstrap-datepicker.js'></script>
+    <script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+    <script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- END THIS PAGE PLUGINS-->
+
+    <!-- START TEMPLATE -->
+    <script type="text/javascript" src="js/settings.js"></script>
+
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/actions.js"></script>
+
+    <script type="text/javascript" src="js/demo_dashboard.js"></script>
+    <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->
+
+</body>
+
+</html>
